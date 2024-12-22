@@ -21,7 +21,7 @@ bool solve(vector<vector<double>>& in){
             	res.emplace_back(j - i);
             	res.emplace_back(i * j);
             	res.emplace_back(i / j);
-            	if(fabs(i) > eps) res.emplace_back(j / i);
+            	res.emplace_back(j / i);
     		}
     	}
     	return res;
